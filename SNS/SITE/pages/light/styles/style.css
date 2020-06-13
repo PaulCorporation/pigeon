@@ -1,0 +1,468 @@
+* {
+  box-sizing: border-box;
+}
+A {
+  text-decoration: none;
+} 
+
+body {
+    background-image: url("../images/AccueilPigeon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+
+.center {
+  width: 80%;
+  height: 100vh;
+  margin: 0 auto;
+  text-align:center;
+}
+
+/*
+Style pour la page de login
+*/
+.MainRectangle {
+    background-color: white;
+}
+.parent {
+  display: flex;
+  justify-content: center;
+  width:100%;
+  margin:0 auto;
+  height: 100%;
+  color: black;
+  align-items: center;
+}
+.LeftRectangleLogin {
+  padding: 30px;
+  text-align: center;
+  border-radius: 20px 0px 0px 20px;
+  margin-right: 5px;
+  background-image: url("../images/LeftBackground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 400px;
+}
+.RightRectangleLogin {
+  padding: 30px;
+  text-align: center;
+  margin-left: 5px;
+  border-radius: 0px 20px 20px 0px;
+  background-image: url("../images/RightBackground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 400px;
+}
+.CenterRectangleLogin {
+  width: 100%;
+  padding: 30px;
+  text-align: center;
+  border-radius: 20px 20px 20px 20px;
+  background-image: url("../images/RightBackground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 400px;
+}
+
+input[type=text], select {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #3e94ed;
+  padding-left: 10px;
+}
+
+input[type=password], select {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #3e94ed;
+  padding-left: 10px;
+}
+.form-login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.inputLogin input[type=submit] {
+  background-color: #ffffff;
+  color: #3c97ed;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.3rem;
+  font-family: 'Permanent Marker', cursive;
+}
+h4 {
+  text-align: left; 
+  font-family: 'Permanent Marker', cursive;
+  font-size: 1rem;
+  color: #ffdb38;
+}
+.lien {
+  margin-top: 100px;
+}
+h3 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 1.5rem;
+  color: #ffdb38;
+}
+h2 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 2rem;
+  color: #ffdb38;
+}
+h1 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 3rem;
+  color: #ffdb38;
+}
+
+@media (max-width:992px) {
+
+  .center{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
+
+@media (max-width:768px) {
+  .LeftRectangleLogin {
+    border-radius: 20px 20px 0px 0px;
+    margin-right:0;
+  }
+  .RightRectangleLogin{
+    border-radius: 0px 0px 20px 20px;
+    margin: 0;
+  }
+}
+
+@media (max-width:500px){
+  .parent{
+    height:initial;
+  }
+  .LeftRectangleLogin {
+    margin-bottom: 30px;
+    border-radius: 20px 20px 0px 0px;
+    margin-right:0;
+  }
+  .RightRectangleLogin{
+    border-radius: 0px 0px 20px 20px;
+    margin: 0;
+  }
+}
+/*
+Style pour la page d'accueil
+*/
+
+.centerAccueil {
+  width: 60%;
+  height: 100vh;
+  margin: 0 auto;
+  text-align:center;
+}
+.parentAccueil {
+  display: flex;
+  justify-content: center;
+  width:100%;
+  align-items: center;
+  margin-top:20px;
+  background: rgb(86,107,229);
+  background: linear-gradient(90deg, rgba(86,107,229,1) 0%, rgba(50,168,240,1) 50%, rgba(15,230,251,1) 100%);
+  padding: 15px;
+  border-radius:20px;
+}
+.rectangleEcriture {
+  width: 100%;
+  text-align: center;
+  justify-content:left;
+  border-radius: 20px 20px 20px 20px;
+  height: 20vh;
+  background-image: url("../images/AccueilRectangleEcriture.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display:flex;
+}
+
+.carreAvatar {
+  width: 150px;
+  height: 150px;
+  background-color: #e3e3e3;
+  border-radius: 20px;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  margin-bottom: 10px;
+}
+
+.input_bg {
+  margin-left:20px;
+}
+.input_bg input[type=submit]{
+  background-image: url(../images/send-arrow.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color:transparent;
+  border: none;
+  width: 50px;
+  height: 39px;
+}
+.add-message {
+  min-height: 100px;
+  max-height: 400px;
+  padding-left:10px!important;
+}
+.rectangleText .col-md-10 {
+  padding: 0;
+}
+.formContainer {
+  width:100%;
+  display: flex;
+  align-items: center;
+}
+.formContainer input[type=text] {
+  width: 80%;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-sizing: border-box;
+  color: #3c97ed;
+
+}
+.tweet_container {
+  background: rgb(86,107,229);
+  background: linear-gradient(90deg, rgba(86,107,229,1) 0%, rgba(50,168,240,1) 50%, rgba(15,230,251,1) 100%);
+  border-radius: 20px 20px 0 0;
+  padding: 30px;
+  margin-top: 30px;
+}
+/*.tweet_content {
+  display:flex;
+  justify-content:space-between;
+}*/
+.tweet_block {
+  display: flex;
+  justify-content: center;
+  width:100%;
+  align-items: center;
+  background: rgb(255, 255, 255);
+  padding: 15px;
+  border-radius:20px;
+  margin-bottom: 20px;
+}
+.tweet_relationships {
+  display: flex;
+  justify-content: flex-end;
+}
+.mainRectangle {
+  width: 100%;
+  text-align: center;
+  border-radius: 20px 20px 20px 20px;
+  margin-top: 10vh;
+  height: 100vh;
+  background-image: url("../images/AccueilMainRectangle.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.secondaryRectangle {
+  width:96.5%;
+  height: 20vh;
+  background-color:white;
+  border-radius: 20px;
+  margin: 2vh 2vh 2vh 2vh;
+  display:flex;
+}
+
+@media (max-width: 1024px) {
+  .parentAccueil {
+    flex-direction: column;
+  }
+  .carreAvatar {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 768px) {
+  .tweet_block {
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .heading {
+    justify-content: flex-start;
+    margin-top: 50px;
+  }
+  .heading h3 {
+    margin-right: 20px;
+  }
+}
+
+/***
+**** Styles pour la page profil****
+***/
+
+.carreAvatarLire {
+  width: 13%;
+  text-align: center;
+  height: 70%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #e3e3e3;
+  margin-top:3vh;
+  margin-left: 3vh;
+  border-radius: 20px;
+}
+
+.texte {
+  text-align: center;
+}
+
+.carreAvatarProfil {
+  width: 150px;
+  height: 150px;
+  background-color: #ffffff;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.rectangleProfil h4 {
+  margin-left:20px;
+  color: #ffdb38;
+  text-align:center;
+}
+.rectangleProfil {
+  width: 300px;
+  height: 150px;
+  border-radius: 20px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.parentProfil {
+  display: flex;
+  justify-content: right;
+  width:100%;
+  align-items: center;
+  margin-top:20px;
+  background: rgb(86,107,229);
+  background: linear-gradient(90deg, rgba(86,107,229,1) 0%, rgba(50,168,240,1) 50%, rgba(15,230,251,1) 100%);
+  padding: 15px;
+  border-radius:20px;
+}
+.informations {
+  width: 50%;
+  text-align: center;
+  height: 70%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-top:3vh;
+  margin-left: 10vh;
+  border-radius: 20px;
+}
+
+.contacter {
+  width: 15%;
+  text-align: center;
+  height: 70%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-top:3vh;
+  margin-left: 10vh;
+  border-radius: 20px;
+}
+
+.rectanglePub {
+  width: 100%;
+  text-align: center;
+  justify-content:left;
+  border-radius: 20px 20px 20px 20px;
+  height: 20vh;
+  background-image: url("../images/Dio.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display:flex;
+}
+
+.social-icon {
+  margin:0 20px;
+  width: 30%;
+  margin-top: 1vh;
+}
+
+.tertiaryRectangle {
+  width:96.5%;
+  height: 20vh;
+  border-radius: 20px;
+  margin: 2vh 2vh 2vh 2vh;
+  display:flex;
+  justify-content:center;
+}
+
+@media (max-width: 1200px) {
+  .parentProfil {
+    flex-direction: column;
+  }
+  .rectangleProfil {
+    margin: 0 auto;
+  }
+}
+
+.subscribe_button {
+  width:100px;
+}
+
+/*
+Menu
+*/
+
+.navbar-brand img:hover {
+	transform:rotate(360deg);
+	transition:all 0.7s;
+}
+.main-nav {
+	position: fixed;
+	top: 0;
+	background: white;
+	z-index: 10;
+	left: 50%;
+	transform: translateX(-50%);
+	width:100vw;
+}
+.nav-link {
+	font-family: 'BebasNeueBook';
+	font-size: 2rem;
+}
+.logo {
+  width:50px;
+}
+.message_attention {
+    text-align:center;
+}
